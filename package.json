@@ -18,6 +18,7 @@
   "homepage": "https://github.com/EnricoBonatoBan/PleaseMoney#readme",
   "dependencies": {
     "node": "^17.7.2",
+    "sass": "^1.51.0",
     "vue": "^3.2.33"
   }
 }
