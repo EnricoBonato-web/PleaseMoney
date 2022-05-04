@@ -1,0 +1,23 @@
+{
+  "name": "pleasemoney",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnricoBonatoBan/PleaseMoney.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnricoBonatoBan/PleaseMoney/issues"
+  },
+  "homepage": "https://github.com/EnricoBonatoBan/PleaseMoney#readme",
+  "dependencies": {
+    "node": "^17.7.2",
+    "vue": "^3.2.33"
+  }
+}
