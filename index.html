@@ -22,21 +22,24 @@
   </head>
   <body>
     <h1>Give me money</h1>
-    <h2 id="value">25$</h2>
-    <h3 id="description">i need money, please</h3>
-    <div id="payment-methods">
+    <div id="request">
+      <h2 id="value">25$</h2>
+      <h3 id="description">i need money, please</h3>
+      <h3 id="duedate">best before: 05/05/2022</h3>
+    </div>
+      <div id="payment-methods">
       <ul>
         <li>
-          <h4 class="payment method">Paypal</h4>
-          <a class="payment link">link</a>
+          <button type="button" class="collapsible payment">Paypal</button>
+          <a class="payment-link content">link</a>
         </li>
         <li>
-          <h4 class="payment method">satispay</h4>
-          <a class="payment link">link</a>
+          <button type="button" class="collapsible payment">satispay</button>
+          <a class="payment-link content">link</a>
         </li>
         <li>
-          <h4 class="payment method">bonifico</h4>
-          <a class="payment link">link</a>
+          <button type="button" class="collapsible payment">bonifico</button>
+          <a class="payment-link content">link</a>
         </li>
       </ul>
     </div>

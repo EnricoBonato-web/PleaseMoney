@@ -27,6 +27,7 @@ $color5: #619B8A
 *
   padding: 0
   margin: 0
+  font-weight: normal
 
 .info
   @include theme
@@ -50,9 +51,12 @@ footer
 h1 
   background-color: $color2
   text-align: center
+  margin: 10px
+  padding: 10px
 h2
   background-color: $color3
   text-align: center
+  font-size: 3em
 h3
   background-color: $color3
   text-align: center
@@ -61,7 +65,53 @@ h4
   text-align: center
 li
   list-style: none
-ul
-  padding: 0
+  padding: 10px
+  margin-top: 20px
+  margin-bottom: 20px
+#payment
+  padding: 10px
+  margin: 10px
+  color: $color4
+  text-decoration-color: black
+.collapsible 
+  cursor: pointer
+  width: 100%
+  border: none
+  text-align: left
+  outline: none
+  font-size: 15px
+
+
 #payment-methods li
   background-color: $color5
+  display: flexbox
+
+#request
+  display: flex
+  flex-flow: column
+  background-color: $color3
+  padding-top: 10px
+  padding-bottom: 10px
+  margin: 10px
+  height: 150px
+
+#duedate
+  display: inline-block
+  align-self: flex-end
+  margin-top: auto
+  text-align: center
+  width: 100%
+  
+#description
+  font-size: 2em
+
+/* Style the collapsible content. Note: hidden by default */
+.content 
+  padding: 0 18px
+  display: none
+  overflow: hidden
+  background-color: #f1f1f1
+  padding: 10px
+  margin: 5px
+.payment
+  text-align: center
