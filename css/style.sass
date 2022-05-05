@@ -3,7 +3,9 @@ SASS SYNTAX
   background: $theme
   box-shadow: 0 0 1px rgba($theme, .25)
   color: #fff
-
+*
+  padding: 0
+  margin: 0
 
 .info
   @include theme
@@ -13,3 +15,31 @@ SASS SYNTAX
 
 .success
   @include theme($theme: DarkGreen)
+
+body
+  background-color: blue
+footer
+  background-color: pink
+  position: absolute
+  bottom: 0
+  height: 10px
+  width: 100%
+
+h1 
+  background-color: red
+  text-align: center
+h2
+  background-color: red
+  text-align: center
+h3
+  background-color: red
+  text-align: center
+h4
+  background-color: red
+  text-align: center
+li
+  list-style: none
+ul
+  padding: 0
+#payment-methods li
+  background-color: yellow
