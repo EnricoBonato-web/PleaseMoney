@@ -1,4 +1,25 @@
 SASS SYNTAX
+$palette: true
+$color1: #233D4D
+$color2: #FE7F2D
+$color3: #FCCA46
+$color4: #A1C181
+$color5: #619B8A
+@if $palette 
+  $color1: #EDEDE9
+  $color2: #D6CCC2
+  $color3: #F5EBE0
+  $color4: #E3D5CA
+  $color5: #D5BDAF
+
+@mixin theme($theme: DarkGray)
+  background: $theme
+  box-shadow: 0 0 1px rgba($theme, .25)
+  color: #fff
+@mixin theme($theme: DarkGray)
+  background: $theme
+  box-shadow: 0 0 1px rgba($theme, .25)
+  color: #fff
 @mixin theme($theme: DarkGray)
   background: $theme
   box-shadow: 0 0 1px rgba($theme, .25)
@@ -17,7 +38,8 @@ SASS SYNTAX
   @include theme($theme: DarkGreen)
 
 body
-  background-color: blue
+  background-color: $color1
+
 footer
   background-color: pink
   position: absolute
@@ -26,20 +48,20 @@ footer
   width: 100%
 
 h1 
-  background-color: red
+  background-color: $color2
   text-align: center
 h2
-  background-color: red
+  background-color: $color3
   text-align: center
 h3
-  background-color: red
+  background-color: $color3
   text-align: center
 h4
-  background-color: red
+  background-color: $color4
   text-align: center
 li
   list-style: none
 ul
   padding: 0
 #payment-methods li
-  background-color: yellow
+  background-color: $color5
