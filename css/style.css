@@ -70,7 +70,6 @@ li {
 #payment {
   padding: 10px;
   margin: 10px;
-  color: #E3D5CA;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
 }
@@ -82,6 +81,7 @@ li {
   text-align: left;
   outline: none;
   font-size: 15px;
+  background-color: #E3D5CA;
 }
 
 #payment-methods li {
@@ -122,7 +122,7 @@ li {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #E3D5CA;
   padding: 10px;
   margin: 5px;
 }
