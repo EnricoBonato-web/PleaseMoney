@@ -1,3 +1,4 @@
+//General Style
 SASS SYNTAX
 $palette: true
 $color1: #233D4D
@@ -5,38 +6,17 @@ $color2: #FE7F2D
 $color3: #FCCA46
 $color4: #A1C181
 $color5: #619B8A
-@if $palette 
+@if $palette
   $color1: #EDEDE9
   $color2: #D6CCC2
   $color3: #F5EBE0
   $color4: #E3D5CA
   $color5: #D5BDAF
 
-@mixin theme($theme: DarkGray)
-  background: $theme
-  box-shadow: 0 0 1px rgba($theme, .25)
-  color: #fff
-@mixin theme($theme: DarkGray)
-  background: $theme
-  box-shadow: 0 0 1px rgba($theme, .25)
-  color: #fff
-@mixin theme($theme: DarkGray)
-  background: $theme
-  box-shadow: 0 0 1px rgba($theme, .25)
-  color: #fff
 *
   padding: 0
   margin: 0
   font-weight: normal
-
-.info
-  @include theme
-
-.alert
-  @include theme($theme: DarkRed)
-
-.success
-  @include theme($theme: DarkGreen)
 
 body
   background-color: $color1
@@ -48,7 +28,7 @@ footer
   height: 10px
   width: 100%
 
-h1 
+h1
   background-color: $color2
   text-align: center
   margin: 10px
@@ -63,30 +43,7 @@ h3
 h4
   background-color: $color4
   text-align: center
-li
-  list-style: none
-  padding: 10px
-  margin-top: 20px
-  margin-bottom: 20px
-#payment
-  padding: 10px
-  margin: 10px
-  text-decoration-color: black
-  
-.collapsible 
-  cursor: pointer
-  width: 100%
-  border: none
-  text-align: left
-  outline: none
-  font-size: 15px
-  background-color: $color3
-
-
-#payment-methods li
-  background-color: $color5
-  display: flexbox
-
+// Request Area
 #request
   display: flex
   flex-flow: column
@@ -102,17 +59,42 @@ li
   margin-top: auto
   text-align: center
   width: 100%
-  
+
 #description
   font-size: 2em
 
-/* Style the collapsible content. Note: hidden by default */
-.content 
+//Links Area
+
+#payment-methods li
+  background-color: $color5
+  display: flexbox
+  list-style: none
+  padding: 10px
+  margin-top: 20px
+  margin-bottom: 20px
+  text-align: center
+  border-radius: 20px
+  .payment
+    padding: 10px
+    border-radius: 15px
+  .active
+    box-shadow: 0 1px 40px $color1
+    margin-bottom: 10px
+  ul
+    background-color: red
+
+      //show link
+.collapsible
+  cursor: pointer
+  width: 100%
+  border: none
+  outline: none
+  font-size: 15px
+  background-color: $color3
+.content
   padding: 0 18px
   display: none
   overflow: hidden
   background-color: $color4
   padding: 10px
   margin: 5px
-.payment
-  text-align: center

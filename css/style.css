@@ -4,27 +4,6 @@
   font-weight: normal;
 }
 
-.info {
-  background: DarkGray;
-  -webkit-box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
-          box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
-  color: #fff;
-}
-
-.alert {
-  background: DarkRed;
-  -webkit-box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
-          box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
-  color: #fff;
-}
-
-.success {
-  background: DarkGreen;
-  -webkit-box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
-          box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
-  color: #fff;
-}
-
 body {
   background-color: #EDEDE9;
 }
@@ -60,35 +39,6 @@ h4 {
   text-align: center;
 }
 
-li {
-  list-style: none;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#payment {
-  padding: 10px;
-  margin: 10px;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-}
-
-.collapsible {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  background-color: #F5EBE0;
-}
-
-#payment-methods li {
-  background-color: #D5BDAF;
-  display: flexbox;
-}
-
 #request {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +67,41 @@ li {
   font-size: 2em;
 }
 
-/* Style the collapsible content. Note: hidden by default */
+#payment-methods li {
+  background-color: #D5BDAF;
+  display: flexbox;
+  list-style: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#payment-methods li .payment {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#payment-methods li .active {
+  -webkit-box-shadow: 0 1px 40px #EDEDE9;
+          box-shadow: 0 1px 40px #EDEDE9;
+  margin-bottom: 10px;
+}
+
+#payment-methods li ul {
+  background-color: red;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #F5EBE0;
+}
+
 .content {
   padding: 0 18px;
   display: none;
@@ -125,9 +109,5 @@ li {
   background-color: #E3D5CA;
   padding: 10px;
   margin: 5px;
-}
-
-.payment {
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
