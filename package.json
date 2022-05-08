@@ -17,10 +17,14 @@
   },
   "homepage": "https://github.com/EnricoBonatoBan/PleaseMoney#readme",
   "dependencies": {
+    "jquery": "^3.6.0",
     "node": "^17.7.2",
     "node-typescript": "^0.1.3",
     "sass": "^1.51.0",
     "typescript": "^4.6.4",
     "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
   }
 }

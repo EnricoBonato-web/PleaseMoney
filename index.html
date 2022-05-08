@@ -27,27 +27,44 @@
       <h3 id="description">i need money, please</h3>
       <h3 id="duedate">best before: 05/05/2022</h3>
     </div>
-      <div id="payment-methods">
+    <div id="payment-methods">
       <ul>
         <li>
           <button type="button" class="collapsible payment">Paypal</button>
           <div class="payment-link content">
-          <a href="https://paypal.me/Bonnyyyyy?country.x=IT&locale.x=it_IT">https://paypal.me/Bonnyyyyy?country.x=IT&locale.x=it_IT</a>
-        </div>
+            <p>Profilo: Bonnyyyyy</p>
+            <p>
+              Link:
+              <a href="https://paypal.me/Bonnyyyyy?country.x=IT&locale.x=it_IT"
+                >Paypal</a
+              >
+            </p>
+          </div>
         </li>
         <li>
           <button type="button" class="collapsible payment">Satispay</button>
-          <a class="payment-link content">link</a>
+          <div class="payment-link content">
+            <!--<p>Profilo: Bonnyyyyy</p>-->
+            <p>
+              Link:
+              <a
+                href="https://www.satispay.com/download/qrcode/S6Y-CON--A66D6830-21B9-498C-8EC7-62DCE981022E"
+                >satispay</a
+              >
+            </p>
+          </div>
         </li>
         <li>
           <button type="button" class="collapsible payment">Bonifico</button>
-          <a class="payment-link content">link</a>
+          <div class="payment-link content">
+            <p>Nome: Enrico Bonato</p>
+            <p onclick="copyToClipboard('#iban')" id="iban">IBAN: IT70T0306961565100000003748</p>
+          </div>
         </li>
       </ul>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </body>
-  <footer>
-    
-  </footer>
+  <footer></footer>
 </html>

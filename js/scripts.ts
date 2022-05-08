@@ -1,9 +1,9 @@
-let coll: any = document.getElementsByClassName("collapsible");
+const coll: HTMLCollectionOf<Element> = document.getElementsByClassName("collapsible");
 let i: number;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function (this: HTMLElement) {
-    for (let item of coll) {
+    for (let item of <any>coll) {
       if (item != this) {
         item.classList.remove("active");
         item.nextElementSibling.style.display = "none";
@@ -18,4 +18,11 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+function copyToClipboard(element) {
+  let $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
 }

@@ -2,8 +2,8 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
-        for (var _i = 0, coll_1 = coll; _i < coll_1.length; _i++) {
-            var item = coll_1[_i];
+        for (var _i = 0, _a = coll; _i < _a.length; _i++) {
+            var item = _a[_i];
             if (item != this) {
                 item.classList.remove("active");
                 item.nextElementSibling.style.display = "none";
@@ -18,5 +18,12 @@ for (i = 0; i < coll.length; i++) {
             content.style.display = "block";
         }
     });
+}
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
 }
 //# sourceMappingURL=scripts.js.map
