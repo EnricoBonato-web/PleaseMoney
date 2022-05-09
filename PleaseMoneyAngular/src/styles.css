@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  background-color: #EDEDE9;
+}
+
+footer {
+  background-color: pink;
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+}
+
+h1 {
+  background-color: #D6CCC2;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2 {
+  background-color: #F5EBE0;
+  text-align: center;
+  font-size: 3em;
+}
+
+h3 {
+  background-color: #F5EBE0;
+  text-align: center;
+}
+
+h4 {
+  background-color: #E3D5CA;
+  text-align: center;
+}
+
+#request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #F5EBE0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  height: 150px;
+}
+
+#duedate {
+  display: inline-block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#description {
+  font-size: 2em;
+}
+
+#payment-methods li {
+  background-color: #D5BDAF;
+  display: flexbox;
+  list-style: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#payment-methods li .payment {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.3em;
+}
+
+#payment-methods li .active {
+  -webkit-box-shadow: 0 1px 40px #EDEDE9;
+          box-shadow: 0 1px 40px #EDEDE9;
+  margin-bottom: 10px;
+}
+
+#payment-methods li ul {
+  background-color: red;
+}
+
+.payment-link {
+  border-radius: 10px;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #F5EBE0;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #E3D5CA;
+  padding: 10px;
+  margin: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
