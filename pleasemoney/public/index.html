@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PleaseMoney</title>
+    <meta name="description" content="." />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="PleaseMoney" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="ects." />
+    <meta property="og:image" content="image.png" />
+  </head>
+  <body>
+    <h1>Give me money</h1>
+    <div id="request">
+      <h2 id="value">25$</h2>
+      <h3 id="description">i need money, please</h3>
+      <h3 id="duedate">best before: 05/05/2022</h3>
+    </div>
+    <div id="payment-methods">
+      <ul>
+        <li>
+          <button type="button" class="collapsible payment">Paypal</button>
+          <div class="payment-link content">
+            <p>Profilo: Bonnyyyyy</p>
+            <p>
+              Link:
+              <a href="https://paypal.me/Bonnyyyyy?country.x=IT&locale.x=it_IT"
+                >Paypal</a
+              >
+            </p>
+          </div>
+        </li>
+        <li>
+          <button type="button" class="collapsible payment">Satispay</button>
+          <div class="payment-link content">
+            <!--<p>Profilo: Bonnyyyyy</p>-->
+            <p>
+              Link:
+              <a
+                href="https://www.satispay.com/download/qrcode/S6Y-CON--A66D6830-21B9-498C-8EC7-62DCE981022E"
+                >satispay</a
+              >
+            </p>
+          </div>
+        </li>
+        <li>
+          <button type="button" class="collapsible payment">Bonifico</button>
+          <div class="payment-link content">
+            <p>Nome: Enrico Bonato</p>
+            <p onclick="copyToClipboard('#iban')" id="iban">IBAN: IT70T0306961565100000003748</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </body>
+  <footer></footer>
+</html>
