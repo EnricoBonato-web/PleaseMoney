@@ -20,7 +20,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 function copyToClipboard(element) {
-  let $temp = $("<input>");
+  const $temp = $("<input>");
   $("body").append($temp);
   $temp.val($(element).text()).select();
   document.execCommand("copy");
